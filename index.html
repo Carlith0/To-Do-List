@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Libura">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="frontend/styles/style.css">
+    
+</head>
+<body>
+    <nav>
+        <h1>ToDo</h1>
+        <a href="tasks">TASKS</a>
+        /
+        <a href="archive">ARCHIVE</a>
+        <div>task progress</div>
+    </nav>
+    <main>
+        <h3>ADD NEW TASK</h3>
+        <form action="" method="post">
+            <label for="name">NAME</label><br>
+            <input type="text" name="name" id="name" required><br>
+            <label for="category">CATEGORY</label><br>
+            <select name="category" id="category">
+                <option value="work">Work</option>
+                <option value="excercises">Excercises</option>
+                <option value="long-term-goals">Long Term Goals</option>
+            </select>
+            <label for="description">DESCRIPTION</label><br>
+            <textarea name="description" id="description" cols="20" rows="2"></textarea><br>
+            <button type="submit">ADD</button>
+            <button type="reset">RESET</button>
+        </form>
+    </main>
+    <script src="frontend/js/main.js"></script>
+</body>
+</html>
